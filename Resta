@@ -1,0 +1,16 @@
+module resta(init, ri, ti,co,salr);
+
+  input init;
+  input [3 :0] ri;
+  input [3 :0] ti;
+  output co;
+  output [3 :0] salr;
+  
+  
+  wire [4:0] st;
+  assign salr= st[3:0];
+  assign Cout = st[4];
+
+  assign st  = ri-ti;
+
+endmodule
